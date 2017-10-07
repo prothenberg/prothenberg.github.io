@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "What a time to be alive"
+title: "Moon pies"
 email: ""
 description: > # this means to ignore newlines until "baseurl:"
   The blog (type-thing) for Paul Rothenberg. The one who works at JetBlue. Not an imposter. 

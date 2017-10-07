@@ -37,11 +37,11 @@ Don't get me wrong, some people are just different. There are always outliers, m
 There's an episode of Futurama that includes a throw-away reference to a character known as "Evil Lincoln". It's a one-second gag that features our 16th President as an evil-looking hologram with an axe. That's all there is to it. Completely one-dimentional, completely random, completely unimportant in every way, and it makes me giggle every time. Repeating these words reminds me not to take myself too serously, because it's all bullshit in the end, and that the world may be a scary place -- but the only thing we have to fear, is fear itself, in the form of murderous robots. 
 
 <div class="post-image post-image--split">
-    <img src="/img/posts/turks1.png" alt="The view from the room" />
-    <img src="/img/posts/turks2.png" alt="Arina at dusk" />
+    <img src="/img/posts/turks/turks1.png" alt="The view from the room" />
+    <img src="/img/posts/turks/turks2.png" alt="Arina at dusk" />
 </div>
 
 <div class="post-image">
-    <img src="/img/posts/turks3.png" alt="The boat to Parrot Cay" />
+    <img src="/img/posts/turks/turks3.png" alt="The boat to Parrot Cay" />
     <p class="post-image-caption">Water's not supposed to be this color.</p>
 </div>
