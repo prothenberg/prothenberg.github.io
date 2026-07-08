@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Paul S. Rothenberg</title>
+  <meta name="description" content="Thoughts from Paul S. Rothenberg, author of Where's My Participation Trophy?">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Paul S. Rothenberg</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#book">The Book</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>The Blog</h1>
+    <p class="subtitle">Dispatches from an elder millennial.</p>
+  </header>
+
+
+  <!-- BLOG CONTENT
+       =====================================================
+       COMING SOON PLACEHOLDER
+       When you're ready to launch the blog, replace the
+       .blog-coming-soon block below with your post listing.
+
+       A simple static blog structure might look like:
+       - One <article> per post, newest first
+       - Each article links to a separate post-slug.html file
+       - Or you could migrate to a static site generator (Jekyll,
+         Hugo, Eleventy) which handles this automatically
+
+       Example post card structure (uncomment and duplicate):
+
+       <article class="blog-post-card">
+         <p class="post-date">January 15, 2026</p>
+         <h2 class="post-title">
+           <a href="posts/my-first-post.html">My First Post Title</a>
+         </h2>
+         <p class="post-excerpt">
+           A short excerpt or opening line from the post...
+         </p>
+         <a href="posts/my-first-post.html" class="btn btn-teal-outline" style="margin-top: 8px;">
+           Read More
+         </a>
+       </article>
+
+       =====================================================
+  -->
+
+  <section class="section-blog" aria-labelledby="blog-heading">
+    <div class="blog-inner">
+
+      <div class="blog-coming-soon">
+        <div class="ornament-large">&#10022; &#10022; &#10022;</div>
+        <h2 id="blog-heading">Coming Soon</h2>
+        <p>
+          I'm working on it. Check back soon for essays, musings, and general
+          elder millennial oversharing.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-name">Paul S. Rothenberg</p>
+          <p class="footer-tagline">Author &middot; <em>Where's My Participation Trophy?</em></p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#book">The Book</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find the Book</h4>
+          <ul>
+            <li>
+              <a href="https://www.amazon.com/Wheres-Participation-Trophy-Millennial-Memoir/dp/B0GMVJ4VXJ/"
+                 target="_blank" rel="noopener noreferrer">Amazon</a>
+            </li>
+            <li>
+              <a href="https://www.goodreads.com/book/show/246364751-where-s-my-participation-trophy"
+                 target="_blank" rel="noopener noreferrer">Goodreads</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Paul S. Rothenberg. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>

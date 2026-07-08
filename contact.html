@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Paul S. Rothenberg</title>
+  <meta name="description" content="Get in touch with author Paul S. Rothenberg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="site-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Paul S. Rothenberg</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#book">The Book</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <!-- BLOG NAV LINK — uncomment when ready to launch
+        <li><a href="blog.html">Blog</a></li>
+        -->
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Get in Touch</h1>
+    <p class="subtitle">I'd love to hear from you.</p>
+  </header>
+
+
+  <!-- CONTACT CONTENT -->
+  <section class="section-contact" aria-labelledby="contact-heading">
+    <div class="contact-inner">
+      <h2 id="contact-heading">Say Hello</h2>
+
+      <p class="contact-body">
+        Whether you're a fellow elder millennial who also never received your
+        participation trophy, a reader with a question, a journalist, a book
+        club, or just someone who wants to connect — my inbox is open.
+      </p>
+
+      <p class="contact-body">
+        The best way to reach me is by email:
+      </p>
+
+      <!--
+        REPLACE: Swap in your actual email address below (both the href and the visible text).
+        Using a plain mailto: link keeps things simple and requires no backend.
+      -->
+      <a href="mailto:prothenberg@gmail.com" class="contact-email-link">
+        prothenberg@gmail.com
+      </a>
+
+        <p class="contact-body">
+        Yes, this is my actual email address. I need to list it or else Goodreads won't give me my author page. Looking at you, Goodreads. 
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <p class="footer-name">Paul S. Rothenberg</p>
+          <p class="footer-tagline">Author &middot; <em>Where's My Participation Trophy?</em></p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#book">The Book</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <!-- BLOG FOOTER LINK — uncomment when ready
+            <li><a href="blog.html">Blog</a></li>
+            -->
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Find the Book</h4>
+          <ul>
+            <li>
+              <a href="https://www.amazon.com/Wheres-Participation-Trophy-Millennial-Memoir/dp/B0GMVJ4VXJ/"
+                 target="_blank" rel="noopener noreferrer">Amazon</a>
+            </li>
+            <li>
+              <a href="https://www.goodreads.com/book/show/246364751-where-s-my-participation-trophy"
+                 target="_blank" rel="noopener noreferrer">Goodreads</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Paul S. Rothenberg. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const isOpen = links.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+  </script>
+
+</body>
+</html>
